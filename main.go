@@ -2,20 +2,40 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"time"
 )
 
+type Todo struct {
+	Content string
+	Priority string
+	Status string
+	CreatedAt time.Time
+
+
+}
 
 
 func main() {
 
-	todo := []string{
-		"映画見に行く",
-		"原宿に5時に行く",
-		"帰りに柔軟剤を買う",
+	todo := make([]Todo, 0, 5)
+	t := Todo{
+		Todo{
+			Content: "掃除する",
+			Priority: "High",
+			Status: "Haven't Started",
+			CreatedAt: time.Now(),
+		} //なにこのエラー　解決したい
+	}
+	todo = append(todo, t)
+
+	Todo {
 
 	}
+
+
 
 
 	r := gin.Default()
