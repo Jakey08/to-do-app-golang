@@ -2,38 +2,56 @@
 package main
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"time"
 )
 
 type Todo struct {
 	Content string
 	Priority string
-	Status string
-	CreatedAt time.Time
+	Status int //0: Not yet, 1: In progress, 2: Stuck, 3:On hold, other: Done
+	//CreatedAt time.Time
+
 
 
 }
 
-
 func main() {
 
+
 	todo := make([]Todo, 0, 5)
-	t := Todo{
+	todo =  []Todo{
 		Todo{
-			Content: "掃除する",
+			Content: "原宿で友達と合う",
 			Priority: "High",
-			Status: "Haven't Started",
-			CreatedAt: time.Now(),
-		} //なにこのエラー　解決したい
-	}
-	todo = append(todo, t)
+			Status: 0,
+			//CreatedAt: time.Now(),
+			},
+		Todo{
+			Content: "アイス買いに行く",
+			Priority: "Low",
+			Status: 1,
+			//CreatedAt: time.Now(),
+		},
+		Todo{
+			Content: "横浜で焼き肉食べる",
+			Priority: "Medium",
+			Status: 2,
+			//CreatedAt: time.Now(),
+		},
+		Todo{
+			Content: "柔軟剤買う",
+			Priority: "Medium",
+			Status: 5,
+			//CreatedAt: time.Now(),
+		},
 
-	Todo {
-
 	}
+
+
+
+
+
 
 
 
