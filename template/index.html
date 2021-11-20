@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>To do App</title>
 </head>
 <body>
     <h1 class="text-primary">To do list</h1>
     <ul>
        {{range .todo}}
-        <li>{{.Content}} {{.Priority}}
+        <li>{{.Content}}
             {{if eq .Status 0}}
                 Not yet
             {{else if eq .Status 1}}
@@ -25,6 +25,17 @@
                 On hold
             {{else}}
                 Done
+            {{end}}
+
+
+            {{if eq .Priority 0}}
+                Low
+            {{else if eq .Priority  1}}
+                Medium
+            {{else if eq .Priority  2}}
+                High
+            {{else}}
+                Critical
             {{end}}
         </li>
 

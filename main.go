@@ -8,7 +8,7 @@ import (
 
 type Todo struct {
 	Content string
-	Priority string
+	Priority int //0: Low, 1: Medium, 2: High, other: Critical
 	Status int //0: Not yet, 1: In progress, 2: Stuck, 3:On hold, other: Done
 	//CreatedAt time.Time
 
@@ -23,35 +23,30 @@ func main() {
 	todo =  []Todo{
 		Todo{
 			Content: "原宿で友達と合う",
-			Priority: "High",
+			Priority: 0,
 			Status: 0,
 			//CreatedAt: time.Now(),
 			},
 		Todo{
 			Content: "アイス買いに行く",
-			Priority: "Low",
+			Priority: 0,
 			Status: 1,
 			//CreatedAt: time.Now(),
 		},
 		Todo{
 			Content: "横浜で焼き肉食べる",
-			Priority: "Medium",
+			Priority: 0,
 			Status: 2,
 			//CreatedAt: time.Now(),
 		},
 		Todo{
 			Content: "柔軟剤買う",
-			Priority: "Medium",
-			Status: 5,
+			Priority: 0,
+			Status: 100,
 			//CreatedAt: time.Now(),
 		},
 
 	}
-
-
-
-
-
 
 
 
