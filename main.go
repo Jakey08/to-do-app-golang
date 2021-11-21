@@ -23,25 +23,25 @@ func main() {
 	todo =  []Todo{
 		Todo{
 			Content: "原宿で友達と合う",
-			Priority: 0,
+			Priority: 1,
 			Status: 0,
 			//CreatedAt: time.Now(),
 			},
 		Todo{
 			Content: "アイス買いに行く",
-			Priority: 0,
+			Priority: 1,
 			Status: 1,
 			//CreatedAt: time.Now(),
 		},
 		Todo{
 			Content: "横浜で焼き肉食べる",
-			Priority: 0,
+			Priority: 1,
 			Status: 2,
 			//CreatedAt: time.Now(),
 		},
 		Todo{
 			Content: "柔軟剤買う",
-			Priority: 0,
+			Priority: 1,
 			Status: 100,
 			//CreatedAt: time.Now(),
 		},
