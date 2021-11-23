@@ -1,0 +1,8 @@
+version: '2'
+services:
+  scss:
+    build: .
+    volumes:
+      - .:/var/www/scss
+    stdin_open: true
+    tty: true
