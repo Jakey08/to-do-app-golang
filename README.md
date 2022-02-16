@@ -1,3 +1,13 @@
 # to-do-app-golang
 
-### これはGolangとGinを用いて現在開発しているTo DO アプリです。
+### This is TO-do app that which is developed with Golang.
+
+#### How to use
+
+After cloning this repositry, run this command.
+
+```
+go run main.go
+```
+Then, the localhost:8080 will open so please allow to open it.
+
