@@ -9,5 +9,5 @@ After cloning this repositry, run this command.
 ```
 go run main.go
 ```
-Then, the localhost:8080 will open so please allow to open it.
+Then, the localhost:8080 will open so please allow to open it!
 
